@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools >= 80.10.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "summrize_ahmed"
+version = "0.0.1"
+description = "that summarizes text using AI models"
+
+authors = [
+  { name="Ahmed Sulieman", email="ahmedlmakkii@gmail.com" },
+]
+
+readme = "README.md"
+requires-python = ">=3.13"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+license = "MIT"
+
+dependencies = [
+    "click",
+    "torch",
+    "transformers",
+    "accelerate",      # Helps with model loading and device placement
+    "sentencepiece",   # Required for many Seq2Seq models like T5
+    "pymupdf4llm",
+]
+
+[project.scripts]
+summarize = "summrize.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[project.urls]
+Homepage = "https://github.com/Ahmed-Almakki/Summrize.git"

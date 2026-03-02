@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+summrize_venv/
+*.egg-info/
+dist
+build/
+eggs/
+.eggs/
+test_input.txt
+*.pdf
