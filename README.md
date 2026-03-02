@@ -30,9 +30,9 @@ chmod +x install_and_test.sh
 ```
 
 Run the application:
-    ```bash
-    summrize -f file_name
-    ```
+```bash
+summrize -f file_name
+```
 
 ## Contributing
 
