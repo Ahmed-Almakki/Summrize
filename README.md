@@ -4,12 +4,12 @@ Summrize is an AI-powered tool designed to generate concise summaries from large
 
 ## Features
 
-- Summarizes long texts into key points
-- Supports multiple input formats (plain text, PDF, etc.)
-- User-friendly interface
-- Fast and accurate results
+- **Multi-Format Support:** Summarize `.txt`, `.pdf`, and `.docx` files.
+- **Interactive Mode:** Run without flags to paste text directly into your terminal.
+- **Privacy First:** Runs 100% locally; no data is sent to external APIs.
+- **Professional CLI:** Built with Python's `Click` library for a smooth terminal experience.
 
-## Installation
+## Installation requirements
 
 ```bash
 git clone https://github.com/Ahmed-Almakki/Summrize.git
@@ -18,20 +18,21 @@ cd Summrize
 pip install -r requirements.txt
 ```
 
-## Usage
 
-1. Run the application:
+
+## Installation & Testing (The Easy Way)
+
+I have provided a bash script that handles the entire installation and runs a test for you:
+
+```bash
+chmod +x install_and_test.sh
+./install_and_test.sh
+```
+
+Run the application:
     ```bash
-    python main.py
+    summrize -f file_name
     ```
-2. Input or upload your text.
-3. Receive a summary instantly.
-
-## Technologies Used
-
-- Python
-- Natural Language Processing (NLP)
-- Streamlit (or your chosen UI framework)
 
 ## Contributing
 
